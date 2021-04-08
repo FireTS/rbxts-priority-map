@@ -1,7 +1,7 @@
 {
 	"name": "@rbxts/priority-map",
 	"version": "1.0.0",
-	"description": "A map that allows different priorites for keys.",
+	"description": "A map that allows multiple values per key while only exposing one.",
 	"main": "out/init.lua",
 	"scripts": {
 		"prepublishOnly": "rbxtsc"
