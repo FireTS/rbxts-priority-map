@@ -18,7 +18,7 @@ const map = new PriorityMap();
 // Default context is "Default"
 // Default priority is 1
 map.set("A", "Value");
-print(map.get("A")); // B
+print(map.get("A")); // Value
 
 map.set("B", "Value1", "Context");
 map.set("B", "Value2", "AnotherContext");
@@ -33,6 +33,9 @@ print(map.get("B")); // Value1
 ```
 
 ## Changelog
+
+### 1.0.2
+- Fix typo in README
 
 ### 1.0.1
 - Add README
