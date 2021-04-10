@@ -5,6 +5,8 @@ The value that is exposed via get(), values(), etc is determined using these rul
 1. Highest priority
 2. Most recently assigned
 
+`PriorityValue` is also exposed (as well as the helper `PriorityBool`), which is what `PriorityMap` uses under the hood. It's useful whenever you only need to store a single value while following the priority rules noted above.
+
 ## Installation:
 
 ```npm i @rbxts/priority-map```
