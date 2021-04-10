@@ -11,6 +11,8 @@ The value that is exposed via get(), values(), etc is determined using these rul
 
 ## Example Usage
 You can find the official documentation [here](https://fireboltofdeath.dev/docs/priority-map)
+
+An example usage of PriorityMap:
 ```typescript
 import { PriorityMap } from "@rbxts/priority-map";
 
@@ -31,6 +33,26 @@ print(map.get("B")); // Value1
 map.set("B", "Value3", "MoreContexts", 0);
 print(map.get("B")); // Value1
 
+```
+
+An example usage of PriorityValue and PriorityBool:
+```typescript
+const value = new PriorityValue<string>();
+
+value.set("Value1");
+print(value.get()); // Value1
+
+value.set("Value2", "Context", -1);
+print(value.get()); // Value1
+
+// PriorityBool is equivalent to PriorityValue<boolean>()
+const bool = new PriorityBool();
+
+bool.enable();
+print(bool.get()); // true
+
+bool.disable("Context", -1);
+print(bool.get()); // true
 ```
 
 ## Changelog
