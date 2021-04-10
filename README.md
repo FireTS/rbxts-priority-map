@@ -10,6 +10,7 @@ The value that is exposed via get(), values(), etc is determined using these rul
 ```npm i @rbxts/priority-map```
 
 ## Example Usage
+You can find the official documentation [here](https://fireboltofdeath.dev/docs/priority-map)
 ```typescript
 import { PriorityMap } from "@rbxts/priority-map";
 
@@ -33,6 +34,10 @@ print(map.get("B")); // Value1
 ```
 
 ## Changelog
+
+### 1.1.0
+- Added PriorityValue and PriorityBool
+- PriorityMap now uses PriorityValue under the hood
 
 ### 1.0.2
 - Fix typo in README
